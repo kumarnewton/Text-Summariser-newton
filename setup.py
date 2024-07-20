@@ -7,7 +7,7 @@ _version_ = "0.0.0"
     
 REPO_NAME = "Text-Summariser-newton"
 AUTHOR_USER_NAME = "kumarnewton"
-SRC_REPO = "TextSummarisernewton"
+SRC_REPO = "textSummarisernewton"
 AUTHOR_EMAIL = "newtonkumar.purn357@gmail.com"
 
 setuptools.setup(
