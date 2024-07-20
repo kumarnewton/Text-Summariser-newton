@@ -1,5 +1,5 @@
 # textSummarizer/main.py
-from src.textsummarizernewton.logging import logger
+from src.textsummarisernewton.logging import logger
 
 logger.info("Welcome to our custom logging")
 
