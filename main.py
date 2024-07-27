@@ -1,10 +1,13 @@
-# textSummarizer/main.py
-from src.textsummarisernewton.logging import logger
+from src.textsummarisernewton.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
+from src.textsummarisernewton.logging.logger import logger 
 
-logger.info("Welcome to our custom logging")
 
-def main():
-    logger.info("This is the main function")
-
-if __name__ == "__main__":
-    main()
+STAGE_NAME = "data Ingestion stage"
+try:
+    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+    data_ingestion = DataIngestionTrainingPipeline()
+    data_ingestion.main()
+    logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+    logger.exception(e)
+    raise e

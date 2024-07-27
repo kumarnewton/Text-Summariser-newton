@@ -1,0 +1,11 @@
+project_root/
+│
+├── src/
+│   ├── src.textsummarisernewton/
+│   │   ├── config/
+│   │   │   └── configuration.py
+│   │   ├── components/
+│   │   │   └── data_ingestion.py
+│   │   └── logging.py
+│   └── ...
+└── script.py
