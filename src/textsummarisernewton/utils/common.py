@@ -1,4 +1,11 @@
+import sys
 import os
+
+# Add src to the PYTHONPATH
+src_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+if src_path not in sys.path:
+    sys.path.append(src_path)
+    
 from box.exceptions import BoxValueError
 import yaml
 from textsummarisernewton.logging.logger import logger
