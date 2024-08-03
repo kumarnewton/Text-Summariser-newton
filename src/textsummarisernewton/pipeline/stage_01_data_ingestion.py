@@ -1,6 +1,14 @@
-from src.textsummarisernewton.config.configuration import ConfigurationManager
-from src.textsummarisernewton.components.data_ingestion import DataIngestion
-from src.textsummarisernewton.logging import logger
+import sys
+import os
+
+# Add src to the PYTHONPATH
+src_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+if src_path not in sys.path:
+    sys.path.append(src_path)
+    
+from textsummarisernewton.config.configuration import ConfigurationManager
+from textsummarisernewton.components.data_ingestion import DataIngestion
+from textsummarisernewton.logging import logger
 
 class DataIngestionTrainingPipeline:
     def __init__(self):
